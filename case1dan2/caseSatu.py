@@ -31,15 +31,27 @@ def normalize_and_deduplicate_fruits(fruits: List[IFruit]) -> List[IFruit]:
     unique_fruits = []
 
     for fruit in fruits:
-        normalized_name = fruit.fruitName.strip().lower().capitalize()
-        if fruit.fruidId not in seen_ids and normalized_name not in seen_names:
+        normalized_name = fruit.fruitName.strip().lower()
+        splitBuah = normalized_name.split()
+
+        capitalized_words = []
+        for buah in splitBuah:
+            buahCapitalize = buah.capitalize()
+            # tambahkan ke array
+            capitalized_words.append(buahCapitalize)
+        # digabungkan
+        final_name = ' '.join(capitalized_words)
+
+        # print(final_name)
+
+        if fruit.fruidId not in seen_ids and final_name not in seen_names:
             seen_ids.add(fruit.fruidId)
-            seen_names.add(normalized_name)
+            seen_names.add(final_name)
 
             unique_fruits.append(
                 IFruit(
                     fruidId=fruit.fruidId,
-                    fruitName=normalized_name,
+                    fruitName=final_name,
                     fruitType=fruit.fruitType,
                     stock=fruit.stock
                 )
@@ -53,7 +65,7 @@ if __name__ == "__main__":
         IFruit(2, "Kurma", "IMPORT", 20),
         IFruit(3, "apel", "IMPORT", 50),
         IFruit(4, "Manggis", "LOCAL", 100),
-        IFruit(5, "Jeruk Bali", "LOCAL", 10),
+        IFruit(5, "Jeruk bali", "LOCAL", 10),
         IFruit(5, "KURMA", "IMPORT", 20),
         IFruit(5, "Salak", "LOCAL", 150),
     ]

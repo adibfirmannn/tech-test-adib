@@ -9,6 +9,7 @@ Repository ini berisi jawaban dari Technical Test Junior Fullstack Developer yan
 **Penjelasan Setiap Case**
 
 ✅ **Case 1: Manajemen Data Buah**
+
 Menggunakan tipe data IFruit dengan properti seperti fruitId, fruitName, fruitType, dan stock.
 
 Fungsi-fungsi yang dibuat:
@@ -24,6 +25,7 @@ Memberi komentar analisis sederhana terkait duplikasi dan validasi data
 ➡️ Implementasi ada di folder case1dan2/caseSatu.py.
 
 ✅ **Case 2: Perhitungan Komentar Bersarang**
+
 Menggunakan struktur data IComment yang dapat memiliki nested replies.
 
 Fungsi yang dibuat akan secara rekursif menghitung total komentar dan semua balasannya.
@@ -31,6 +33,7 @@ Fungsi yang dibuat akan secara rekursif menghitung total komentar dan semua bala
 ➡️ Implementasi ada di folder case1dan2/casedua.py.
 
 ✅ **Case 3: UMKM Kopi Nusantara**
+
 Sebuah landing page sederhana untuk memperkenalkan UMKM bertema Kopi Nusantara.
 
 Dibuat menggunakan React JS dan Tailwind CSS
@@ -50,17 +53,23 @@ Pastikan Python 3 sudah terinstall, lalu jalankan:
 cd case1dan2
 
 Jalankan Case 1
+
 python caseSatu.py
 
 Jalankan Case 2
+
 python casedua.py
 
 **Case 3 (React JS + Tailwind)**
+
 cd case3/cafe-adib-app
+
 npm install
+
 npm run dev
 
 🛠️ **Teknologi yang Digunakan**
+
 Python
 
 React

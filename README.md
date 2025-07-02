@@ -86,6 +86,14 @@ Adib Firmansyah
 
 🌐 https://github.com/adibfirmannn
 
+📐 Desain UI (Figma)
+
+Desain UI untuk halaman UMKM Kopi Nusantara tersedia di Figma:
+
+👉 Lihat di Figma: https://www.figma.com/design/H5GIcn3Qd3uPWnpQXbzTSe/Coffe-Adib?node-id=0-1&t=nT2UPED4YiPhnKrr-1
+
+
+
 
 
 
